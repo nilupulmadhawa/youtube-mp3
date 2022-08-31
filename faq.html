@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Youtube to MP3 Downloader</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./static/normalize.css">
+  <link rel="stylesheet" href="./static/style.css">
+</head>
+
+<body>
+  <div class="gradient" id="gradient2">
+    <nav id="nav">
+      <div class="top-header container">
+        <a href="index.html" class="logo"><span id="top-logo">Youtube mp3</span></a>
+        <div class="header-menu" id="menu">
+          <a href="index.html">Home</a>
+          <a href="how_to.html">How to</a>
+          <a href="support.html">Support</a>
+          <a href="faq.html">FAQ</a>
+          <a href="javascript:void(0);" class="icon" onclick="openNav()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </div><!-- top-header -->
+    </nav>
+
+    <div>
+      <p id="site-tag"><strong>FAQ</strong></p>
+      <p id="site-subtag"><strong>Contacting the SecurityTrails team is easy</strong></p>
+    </div>
+  </div><!-- container -->
+  </div><!-- gradient -->
+  <div class="text-container container">
+    <h1>Frequently asked questions</h1>
+    <h2>How can I convert files simultaneously?</h2>
+    <p>You can convert up to 99 files with our online YouTube mp3 downloader at a time. You can <a href="#">install
+        YouTube Converter</a> in your PC and queue multiple files or a long playlist for conversion simultaneously.</p>
+    <h2>How does audio extraction work? How to use it?</h2>
+    <p>Our service includes an intelligent and user friendly audio extraction system. You just need to copy paste the
+      URL link of the video file and our system will grab the video, convert it into a format you want and prepare it
+      for downloading.</p>
+    <h2>How to continue downloading if it has accidentally stopped?</h2>
+    <p>In case your downloading has stopped, you should try to do it once again. You may also restart the downloading
+      process again.</p>
+    <h2>I can't find the url to paste into Flvto.biz to download a video. Where is it?</h2>
+    <p>You can find the URL in the address bar of your browser. It is the link of the video that appears just below the
+      tab bar of your browser playing the video. If you cannot see the address bar, enable the address bar from your
+      browser setting.</p>
+    <h2>There is no sound for the downloaded MP3.</h2>
+    <p>In case the downloaded mp3 doesn't have any sound, there might be copyright infringement with the video or
+      something wrong with the source video file. Try converting another video and you won’t have the problem.</p>
+    <h2>Can I use Flvto.biz on my Mac or my mobile device?</h2>
+    <p>Yes you can use this free online YouTube video downloader and converter service on your Mac or mobile devices.
+      Our video <a href="#">downloader software</a> also works on multiple platforms and devices.</p>
+    <h2>Is this service free?</h2>
+    <p>Yes our online YouTube Downloader site is absolutely free of cost and you don't even need to register to use it.
+    </p>
+    <h2>What browsers and settings work best with Flvto.biz?</h2>
+    <p>Our service works on any browsers including Google Chrome, Mozilla Firefox, Opera as well as numerous mobile
+      browsers. You also do not need to make any changes in your browser to use our services as well.</p>
+    <h2>What online video services are supported to convert from?</h2>
+    <p>Our YouTube music converter works with YouTube only at the moment. But we’re currently working on development
+      conversion from other sites.</p>
+    <h2>Where can I review your cool online converter?</h2>
+    <p>If you liked our URL to mp3 online converter or have some recommendation for us, you can let us know about it on
+      our feedback section of this page.</p>
+    <h2>Why is Flvto.biz better than similar websites?</h2>
+    <p>Our YouTube Converter to mp3 online service is really simple and easy to use. Unlike others we do not charge you
+      and you do not need to register. These are the reasons that make flvto.biz stand out in the crowd.</p>
+  </div>
+
+
+  <footer>
+    <div class="bottom-menu ">
+      <div class="container">
+        <a class="bottom-menu__item" href="#">Terms of Use</a>
+        <a class="bottom-menu__item" href="#">How to</a>
+        <a class="bottom-menu__item" href="#">Privacy Policy</a>
+        <a class="bottom-menu__item" href="#">DMCA</a>
+        <a class="bottom-menu__item" href="#">Feedback</a>
+        <a class="bottom-menu__item" href="#">FAQ</a>
+        <a class="bottom-menu__item" href="#">Advertisers</a>
+        <a class="bottom-menu__item" href="#">Copyright Claims</a>
+      </div>
+    </div>
+    <div id="footer-bottom">
+      By using this website you accept our <a href="./tc">Terms of Services.</a></div>
+  </footer>
+
+  <script src="./static/app.js"></script>
+  <script type="text/javascript">
+    function openNav() {
+      var x = document.getElementById("menu");
+      if (x.className === "header-menu") {
+        x.className += " responsive";
+        document.body.classList.add("fix");
+        document.getElementById('icon').innerHTML = "<i class='fa fa-times'>";
+      } else {
+        document.getElementById('icon').innerHTML = "<i class='fa fa-bars'>";
+        x.className = "header-menu";
+        document.body.classList.remove("fix");
+      }
+    }
+  </script>
+</body>
+
+</html>
